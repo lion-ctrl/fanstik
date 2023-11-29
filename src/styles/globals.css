@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom properties
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  /* Colors */
+  --black: #000;
+  --color1: #283045;
+  --color2: #f6efe6;
+  --colors-cream-dark: #f6f4e0;
+  --gray: #c3c3c3;
+  --gray-font: #6f7287;
+  --light-black: #3f4e4f;
+  --light-gray: #f8f7fa;
+  --medium-gray: #c3c3c3;
+  --dark-gray: #555;
+  --light-gray-font: #d5d5d5;
+  --light-blue: #e4fbff;
+  --success: #57cc99;
+  --transparentBlack: rgba(0, 0, 0, 0.6);
+  --warning: #ff4d4f;
+  --white: #ffffff;
+
+  /* fonts */
+  --font-size-small: clamp(0.75rem, calc(0.71rem + 0.22vw), 0.88rem);
+  --font-size-normal: clamp(0.88rem, calc(0.83rem + 0.22vw), 1rem);
+  --font-size-big: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --h1: clamp(1.75rem, calc(1.29rem + 1.95vw), 2.75rem);
+  --h2: clamp(1.63rem, calc(1.16rem + 1.95vw), 2.63rem);
+  --h3: clamp(1.5rem, calc(1.04rem + 1.95vw), 2.5rem);
+  --h4: clamp(1.38rem, calc(0.91rem + 1.95vw), 2.38rem);
+  --h5: clamp(1.25rem, calc(0.79rem + 1.95vw), 2.25rem);
+  --h6: clamp(1.13rem, calc(0.66rem + 1.95vw), 2.13rem);
+}
+
+/* global
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+  color: var(--color1);
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+}
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
+.glassmorphism-background {
+  backdrop-filter: blur(1px) saturate(180%);
+  -webkit-backdrop-filter: blur(1px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.box-shadow {
+  box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%),
+    0 5px 12px 4px rgb(0 0 0 / 9%);
+}
+
+/* ------ Slider ------ */
+.next-arrow,
+.prev-arrow {
+  opacity: 0;
+  background-color: var(--color2);
+  cursor: pointer;
+  height: 32px;
+  padding: 5;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s ease opacity;
+  width: 32px;
+  z-index: 1000;
+}
+
+.prev-arrow.hide-arrow,
+.next-arrow.hide-arrow {
+  display: none;
+}
+
+.next-arrow {
+  right: 30px;
+}
+
+.prev-arrow {
+  left: 30px;
+}
+
+.next-arrow svg,
+.prev-arrow {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .slick-slider:hover .next-arrow,
+  .slick-slider:hover .prev-arrow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/* Components
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ------ Menu hamburguer ------ */
+.nav_hamburguer-btn {
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.nav_hamburger-lines {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 22px;
+  justify-content: space-between;
+  width: 32px;
+  z-index: 2;
+}
+
+.nav_hamburger-lines .line {
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.nav_hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav_hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav_hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav_hamburger-lines.is-active .line1 {
+  transform: rotate(40deg);
+}
+
+.nav_hamburger-lines.is-active .line2 {
+  transform: scaleY(0);
+}
+
+.nav_hamburger-lines.is-active .line3 {
+  transform: rotate(-40deg);
+}
+
+/* ------ Hero image ------ */
+.hero-image-mobile {
+  height: 430px;
+}
+
+@media (min-width: 36rem) {
+  .hero-image-mobile {
+    height: 1000px;
+  }
+}
+
+/* ------ Hero image ------ */
+.slider-product-img {
+  height: 184px;
+}
+
+@media (min-width: 36rem) {
+  .slider-product-img {
+    height: 417px;
+  }
+}
