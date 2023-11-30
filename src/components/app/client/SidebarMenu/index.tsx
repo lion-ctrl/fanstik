@@ -78,7 +78,7 @@ export function SidebarMenuChild() {
           style={{ borderTop: `1px solid ${colors.gray}` }}
         >
           <Link
-            href={'/contact-us'}
+            href={'#'}
             className='flex items-center justify-start mb-8 px-4 text-base'
           >
             <div className='mr-1' style={{ width: '20px' }}>
@@ -87,7 +87,7 @@ export function SidebarMenuChild() {
             <p className={lora.className}>Contact us</p>
           </Link>
           <Link
-            href={'/contact-us'}
+            href={'#'}
             className='flex items-center justify-start mb-8 px-4 text-base'
           >
             <div className='mr-1' style={{ width: '20px' }}>

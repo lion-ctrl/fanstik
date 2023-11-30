@@ -39,7 +39,7 @@ export function Footer() {
         © 2023 Fanstik All rights reserved.
       </p>
       <div className='flex flex-wrap items-center justify-center mt-4'>
-        {footerLinks.questions.map(({ href, name }) => (
+        {footerLinks.policies.map(({ href, name }) => (
           <Link
             key={href}
             href={href}
