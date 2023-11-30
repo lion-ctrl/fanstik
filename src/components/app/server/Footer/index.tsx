@@ -22,12 +22,17 @@ export function Footer() {
         ))}
       </div>
       <h4 className={`text-base ${lora.className}`}>Contact Us</h4>
-      <p className='mt-4 text-sm'>000.000.0000</p>
       <a
-        className='inline-block text-sm mt-4 underline'
-        href='mailto:fasntik@gmail.com'
+        href='tlf:1-407-564-0222'
+        className='block mt-4 text-sm hover:underline'
       >
-        fasntik@gmail.com
+        +1 407 564 0222
+      </a>
+      <a
+        className='inline-block text-sm mt-4 hover:underline'
+        href='mailto:fanstik@gmail.com'
+      >
+        fanstik@gmail.com
       </a>
       <Divider />
       <p className='text-sm text-center mt-4'>

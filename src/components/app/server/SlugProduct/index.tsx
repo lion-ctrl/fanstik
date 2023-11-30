@@ -11,9 +11,12 @@ interface Props {
 export function SlugProduct({ product }: Props) {
   return (
     <section className='container'>
-      <div className='row'>
-        <SlugProductImages images={product.productImages!} />
-        <div className='col-12 md:col-6'>
+      <div className='row hg-16 md:hg-0 md:vg-8'>
+        <SlugProductImages
+          images={product.productImages!}
+          isEngravable={product.engravable}
+        />
+        <div className='col-12 md:col-6 order-3 md:order-none'>
           <h1 className={`text-2xl ${lora.className}`}>{product.name}</h1>
           <p className={`text-xl mt-1 ${lora.className}`}>{product.price}</p>
           <p className={`text-base mt-1 mb-6 ${lora.className}`}>

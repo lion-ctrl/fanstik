@@ -64,15 +64,21 @@ svg {
   width: 90%;
 }
 
+.box-shadow {
+  box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%),
+    0 5px 12px 4px rgb(0 0 0 / 9%);
+}
+
 .glassmorphism-background {
   backdrop-filter: blur(1px) saturate(180%);
   -webkit-backdrop-filter: blur(1px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-.box-shadow {
-  box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%),
-    0 5px 12px 4px rgb(0 0 0 / 9%);
+@media (min-width: 48rem) {
+  .md\:w-auto {
+    width: auto;
+  }
 }
 
 /* ------ Slider ------ */

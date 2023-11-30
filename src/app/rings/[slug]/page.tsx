@@ -3,7 +3,7 @@ import { getProductBySlug, products } from '@/data';
 import { lora } from '@/fonts';
 import { redirect } from 'next/navigation';
 
-export default async function EarringsProductPage({
+export default async function RingProductPage({
   params,
 }: {
   params: { slug: string };
@@ -11,7 +11,7 @@ export default async function EarringsProductPage({
   const product = await getProductBySlug(params.slug);
 
   if (!product) {
-    return redirect('/exclusive-jewelry/earrings');
+    return redirect('/rings');
   }
 
   return (
@@ -21,7 +21,7 @@ export default async function EarringsProductPage({
           breadcrumbs={[
             { label: 'Home', href: '/' },
             { label: 'Shop All', href: '/exclusive-jewelry' },
-            { label: 'Earrings', href: '/exclusive-jewelry/earrings' },
+            { label: 'Rings', href: '/rings' },
           ]}
         />
       </section>
@@ -31,7 +31,7 @@ export default async function EarringsProductPage({
       <h2 className={`text-xl text-center mt-8 mb-4 ${lora.className}`}>
         You Might Also Like
       </h2>
-      <Products products={products.filter(({ type }) => type === 'necklace')} />
+      <Products products={products.filter(({ type }) => type === 'bracelet')} />
     </main>
   );
 }

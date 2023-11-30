@@ -3,7 +3,7 @@ import { getProductBySlug, products } from '@/data';
 import { lora } from '@/fonts';
 import { redirect } from 'next/navigation';
 
-export default async function BraceletProductPage({
+export default async function PetProductPage({
   params,
 }: {
   params: { slug: string };
@@ -11,7 +11,7 @@ export default async function BraceletProductPage({
   const product = await getProductBySlug(params.slug);
 
   if (!product) {
-    return redirect('/exclusive-jewelry/bracelets');
+    return redirect('/engravable-pet-jewelry');
   }
 
   return (
@@ -20,8 +20,7 @@ export default async function BraceletProductPage({
         <BreadCrumb
           breadcrumbs={[
             { label: 'Home', href: '/' },
-            { label: 'Shop All', href: '/exclusive-jewelry' },
-            { label: 'Bracelets', href: '/exclusive-jewelry/bracelets' },
+            { label: 'Pet jewelry', href: '/engravable-pet-jewelry' },
           ]}
         />
       </section>
@@ -31,7 +30,11 @@ export default async function BraceletProductPage({
       <h2 className={`text-xl text-center mt-8 mb-4 ${lora.className}`}>
         You Might Also Like
       </h2>
-      <Products products={products.filter(({ type }) => type === 'ring')} />
+      <Products
+        products={products.filter(
+          ({ slug, type }) => slug !== params.slug && type === 'pet'
+        )}
+      />
     </main>
   );
 }

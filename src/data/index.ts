@@ -12,33 +12,33 @@ export const menuLinks = [
 export const footerLinks = {
   questions: [
     {
-      href: '/faq',
+      href: '#',
       name: 'FAQ',
     },
     {
-      href: '/contact-us',
+      href: '#',
       name: 'Contact Us',
     },
     {
-      href: '/shipping-and-return',
+      href: '#',
       name: 'Shipping & Return',
     },
     {
-      href: '/location',
-      name: 'Location',
+      href: '#',
+      name: 'Location: Orlando Florida EE.UU',
     },
   ],
   policies: [
     {
-      href: '/privacy-policy',
+      href: '#',
       name: 'Privacy Policy',
     },
     {
-      href: '/terms',
+      href: '#',
       name: 'Terms',
     },
     {
-      href: '/unclaimer',
+      href: '#',
       name: 'Unclaimer',
     },
   ],
@@ -46,7 +46,7 @@ export const footerLinks = {
 
 export const products: Product[] = [
   {
-    href: '/exclusive-jewelry/necklaces/wilder-mini-alphabet-necklace-1',
+    href: '/necklaces/wilder-mini-alphabet-necklace-1',
     slug: 'wilder-mini-alphabet-necklace-1',
     src: '/assets/products/necklaces/necklace1.webp',
     name: 'Wilder Mini Alphabet Necklace',
@@ -72,7 +72,7 @@ export const products: Product[] = [
     type: 'necklace',
   },
   {
-    href: '/exclusive-jewelry/necklaces/parker-heart-mini-necklace-2',
+    href: '/necklaces/parker-heart-mini-necklace-2',
     slug: 'parker-heart-mini-necklace-2',
     src: '/assets/products/necklaces/necklace2.webp',
     name: 'Parker Heart Mini Necklace',
@@ -97,7 +97,7 @@ export const products: Product[] = [
     type: 'necklace',
   },
   {
-    href: '/exclusive-jewelry/necklaces/pearl-newport-necklace-3',
+    href: '/necklaces/pearl-newport-necklace-3',
     slug: 'pearl-newport-necklace-3',
     src: '/assets/products/necklaces/necklace3.webp',
     name: 'Pearl Newport Necklace',
@@ -121,7 +121,7 @@ export const products: Product[] = [
     type: 'necklace',
   },
   {
-    href: '/exclusive-jewelry/necklaces/birthstone-coin-necklace-4',
+    href: '/necklaces/birthstone-coin-necklace-4',
     slug: 'birthstone-coin-necklace-4',
     src: '/assets/products/necklaces/necklace4.webp',
     name: 'Birthstone Coin Necklace',
@@ -147,7 +147,7 @@ export const products: Product[] = [
     type: 'necklace',
   },
   {
-    href: '/exclusive-jewelry/necklaces/bespoke-parker-mini-layering-set-5',
+    href: '/necklaces/bespoke-parker-mini-layering-set-5',
     slug: 'bespoke-parker-mini-layering-set-5',
     src: '/assets/products/necklaces/necklace5.webp',
     name: 'Bespoke Parker Mini Layering Set',
@@ -171,7 +171,7 @@ export const products: Product[] = [
     engravable: true,
   },
   {
-    href: '/exclusive-jewelry/necklaces/parker-mini-layering-set-6',
+    href: '/necklaces/parker-mini-layering-set-6',
     slug: 'parker-mini-layering-set-6',
     src: '/assets/products/necklaces/necklace6.webp',
     name: 'Parker Mini Layering Set',
@@ -195,7 +195,7 @@ export const products: Product[] = [
     type: 'necklace',
   },
   {
-    href: '/exclusive-jewelry/earrings/parker-huggies-7',
+    href: '/earrings/parker-huggies-7',
     slug: 'parker-huggies-7',
     src: '/assets/products/earrings/earrings1.webp',
     name: 'Parker Huggies',
@@ -218,7 +218,7 @@ export const products: Product[] = [
     type: 'earrings',
   },
   {
-    href: '/exclusive-jewelry/earrings/rose-marble-huggies-8',
+    href: '/earrings/rose-marble-huggies-8',
     slug: 'rose-marble-huggies-8',
     src: '/assets/products/earrings/earrings2.webp',
     name: 'Rose Marble Huggies',
@@ -242,7 +242,7 @@ export const products: Product[] = [
     type: 'earrings',
   },
   {
-    href: '/exclusive-jewelry/earrings/wilder-shimmer-bar-huggies-9',
+    href: '/earrings/wilder-shimmer-bar-huggies-9',
     slug: 'wilder-shimmer-bar-huggies-9',
     src: '/assets/products/earrings/earrings3.webp',
     name: 'Wilder Shimmer Bar Huggies',
@@ -266,7 +266,7 @@ export const products: Product[] = [
     type: 'earrings',
   },
   {
-    href: '/exclusive-jewelry/bracelets/wilder-alphabet-bracelet-10',
+    href: '/bracelets/wilder-alphabet-bracelet-10',
     slug: 'wilder-alphabet-bracelet-10',
     src: '/assets/products/bracelets/bracelet1.webp',
     name: 'Wilder Alphabet Bracelet',
@@ -295,7 +295,7 @@ export const products: Product[] = [
     type: 'bracelet',
   },
   {
-    href: '/exclusive-jewelry/bracelets/parker-mini-bracelet-11',
+    href: '/bracelets/parker-mini-bracelet-11',
     slug: 'parker-mini-bracelet-11',
     src: '/assets/products/bracelets/bracelet2.webp',
     name: 'Parker Mini Bracelet',
@@ -321,7 +321,7 @@ export const products: Product[] = [
     type: 'bracelet',
   },
   {
-    href: '/exclusive-jewelry/bracelets/poppy-gold-bracelet-set-12',
+    href: '/bracelets/poppy-gold-bracelet-set-12',
     slug: 'poppy-gold-bracelet-set-12',
     src: '/assets/products/bracelets/bracelet3.webp',
     name: 'Poppy Gold Bracelet Set',
@@ -346,7 +346,32 @@ export const products: Product[] = [
     type: 'bracelet',
   },
   {
-    href: '/exclusive-jewelry/rings/parker-link-ring-13',
+    href: '/bracelets/bespoke-plate-adjustable-bracelet-4',
+    slug: 'bespoke-plate-adjustable-bracelet-4',
+    src: '/assets/products/bracelets/bracelet4.webp',
+    name: 'Bespoke Plate Adjustable Bracelet',
+    advice:
+      'A timeless style, this chain bracelet is engravable for a personalized touch. Custom engrave this bracelet with your initials or favorite number.',
+    details:
+      'be·spoke, taking customization to a more personal level. Customize this delicate plate bracelet with initials, a significant date, a declaration of love, or get creative with any engraving of your choice. be· spoke styles feature a sliding adjustable bead so it fits every wrist. A meaningful gift for bridesmaids, brides, graduates, mothers, and just because.',
+    detailsList: [
+      'Engravable',
+      'Adjustable',
+      'Bracelet extends out to 9"',
+      'Bar is 1" by 1/8"',
+      'Avoid contact with anything containing derivatives of alcohol',
+    ],
+    productImages: [
+      '/assets/products/bracelets/bracelet4.webp',
+      '/assets/products/bracelets/bracelet4-1.webp',
+      '/assets/products/bracelets/bracelet4-2.webp',
+    ],
+    price: '$75',
+    type: 'bracelet',
+    engravable: true,
+  },
+  {
+    href: '/rings/parker-link-ring-13',
     slug: 'parker-link-ring-13',
     src: '/assets/products/rings/ring1.webp',
     name: 'Parker Link Ring',
@@ -369,7 +394,7 @@ export const products: Product[] = [
     type: 'ring',
   },
   {
-    href: '/exclusive-jewelry/rings/louise-heart-signet-ring-14',
+    href: '/rings/louise-heart-signet-ring-14',
     slug: 'louise-heart-signet-ring-14',
     src: '/assets/products/rings/ring2.webp',
     name: 'Louise Heart Signet Ring',
@@ -393,7 +418,7 @@ export const products: Product[] = [
     type: 'ring',
   },
   {
-    href: '/exclusive-jewelry/rings/lexi-pear-cocktail-ring-15',
+    href: '/rings/lexi-pear-cocktail-ring-15',
     slug: 'lexi-pear-cocktail-ring-15',
     src: '/assets/products/rings/ring3.webp',
     name: 'Lexi Pear Cocktail Ring',
@@ -417,26 +442,91 @@ export const products: Product[] = [
     price: '$65',
     type: 'ring',
   },
+  {
+    href: '/rings/bespoke-wilder-tag-ring-4',
+    slug: 'bespoke-wilder-tag-ring-4',
+    src: '/assets/products/rings/ring4.webp',
+    name: 'Bespoke Wilder Tag Ring',
+    advice:
+      'A timeless style, this ring is engravable for a personalized touch. Custom engrave this statement ring with your initials or favorite number.',
+    details: 'Make a statement with this gold plated engravable bar ring.',
+    detailsList: [
+      'Engravable',
+      'Bar measures 9/16" by 1/4"',
+      'Band thickness 1/16"',
+      'Available in 18k gold plated brass',
+      'Avoid contact with anything containing derivatives of alcohol',
+    ],
+    productImages: [
+      '/assets/products/rings/ring4.webp',
+      '/assets/products/rings/ring4-1.webp',
+    ],
+    price: '$105',
+    type: 'ring',
+    engravable: true,
+  },
+  {
+    href: '/engravable-pet-jewelry/gotags-16',
+    slug: 'gotags-16',
+    src: '/assets/products/pet/pet1.jpg',
+    name: 'GoTags',
+    advice:
+      'GoTags Stainless Steel Pet ID Tags, Personalized Dog Tags and Cat Tags, up to 8 Lines of Custom Text, Engraved on Both Sides, in Bone, Round, Heart, Bow Tie and More',
+    details:
+      'Ultimate Durability: Our stainless steel dog tag withstands even the most active pet adventures, ensuring it outshines and outlasts flimsy aluminum tags. Join the ranks of happy pet parents who can finally bid farewell to worries of bent or broken tags',
+    detailsList: [
+      'Engravable',
+      'Stainless Steel',
+      'Avoid contact with anything containing derivatives of alcohol',
+    ],
+    productImages: [
+      '/assets/products/pet/pet1.jpg',
+      '/assets/products/pet/pet1-1.jpg',
+      '/assets/products/pet/pet1-2.jpg',
+    ],
+    price: '$3.99',
+    type: 'pet',
+    engravable: true,
+  },
+  {
+    href: '/engravable-pet-jewelry/dog-collar-with-name-plate-17',
+    slug: 'dog-collar-with-name-plate-17',
+    src: '/assets/products/pet/pet2.jpg',
+    name: 'Personalized Dog Collar with Name Plate',
+    advice:
+      'Personalized dog collar: collar engraved with name, phone or other text of your choice',
+    details:
+      'Quality: modern, elegant and functional. Strong design that is guaranteed to last',
+    detailsList: ['Engravable', 'Leather'],
+    productImages: [
+      '/assets/products/pet/pet2.jpg',
+      '/assets/products/pet/pet2-1.jpg',
+      '/assets/products/pet/pet2-2.jpg',
+    ],
+    price: '$17.95',
+    type: 'pet',
+    engravable: true,
+  },
 ];
 
 export const jewelryCategories = [
   {
-    href: '/exclusive-jewelry/bracelets',
+    href: '/bracelets',
     src: '/assets/categories/bracelets.webp',
     name: 'Bracelets',
   },
   {
-    href: '/exclusive-jewelry/earrings',
+    href: '/earrings',
     src: '/assets/categories/earrings.webp',
     name: 'Earrings',
   },
   {
-    href: '/exclusive-jewelry/necklaces',
+    href: '/necklaces',
     src: '/assets/categories/necklaces.webp',
     name: 'Necklaces',
   },
   {
-    href: '/exclusive-jewelry/rings',
+    href: '/rings',
     src: '/assets/categories/rings.webp',
     name: 'Rings',
   },

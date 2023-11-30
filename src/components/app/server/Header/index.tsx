@@ -11,7 +11,7 @@ import { lora } from '@/fonts';
 export const Header = () => {
   return (
     <header
-      className='sticky top-0 z-10'
+      className='sticky top-0 z-50'
       style={{
         backgroundColor: colors.white,
         borderBottom: `1px solid ${colors.color1}`,
