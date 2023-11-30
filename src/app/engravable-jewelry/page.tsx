@@ -11,7 +11,9 @@ export default function EngravableJewelryPage() {
       </section>
       <h1 className={`text-center text-4xl ${lora.className}`}>Engravable</h1>
       <Products
-        products={products.filter(({ engravable }) => engravable)}
+        products={products.filter(
+          ({ engravable, type }) => engravable && type !== 'pet'
+        )}
         showProductCount
       />
     </main>
