@@ -1,14 +1,14 @@
 import { footerLinks } from '@/data';
 import { lora } from '@/fonts';
 import { colors } from '@/styles/variables';
+import { Divider } from '@/components/app/server/Divider';
 import Link from 'next/link';
-import React from 'react';
 
 export function Footer() {
   return (
     <footer
       className='px-8 py-4 mt-8'
-      style={{ backgroundColor: colors.color2 }}
+      style={{ backgroundColor: colors.color2, color: colors.color1 }}
     >
       <div className='flex flex-col items-start'>
         {footerLinks.questions.map(({ href, name }) => (
@@ -29,10 +29,7 @@ export function Footer() {
       >
         fasntik@gmail.com
       </a>
-      <div
-        className='border-b border-solid mt-14'
-        style={{ borderBottomColor: colors.color1 }}
-      />
+      <Divider />
       <p className='text-sm text-center mt-4'>
         © 2023 Fanstik All rights reserved.
       </p>

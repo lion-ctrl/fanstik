@@ -1,8 +1,11 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { HandBagIcon, SearchIcon } from '@/components/icons';
 import { colors } from '@/styles/variables';
-import { HamburguerButton, MenuLinksDesktop } from '@/components/app';
+import {
+  HamburguerButton,
+  LogoButton,
+  MenuLinksDesktop,
+} from '@/components/app';
 import { lora } from '@/fonts';
 
 export const Header = () => {
@@ -11,24 +14,14 @@ export const Header = () => {
       className='sticky top-0 z-10'
       style={{
         backgroundColor: colors.white,
-        borderBottom: `1px solid ${colors.gray}`,
+        borderBottom: `1px solid ${colors.color1}`,
         height: 88,
+        color: colors.color1,
       }}
     >
       <nav className='h-full'>
         <div className='container h-full row py-3'>
-          <Link
-            href='/'
-            className='col-4 md:col-2 flex items-center justify-center md:justify-start'
-          >
-            <Image
-              src='/logo.png'
-              alt='logo'
-              width={160}
-              height={80}
-              priority
-            />
-          </Link>
+          <LogoButton />
 
           <ul className='col-8 md:col-10 flex items-center justify-end md:justify-center text-sm'>
             <MenuLinksDesktop />

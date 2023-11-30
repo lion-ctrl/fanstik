@@ -3,9 +3,14 @@ import { AppSelector } from '@/store/selectors';
 import { colors } from '@/styles/variables';
 import { AppProvider } from '@/components/app/client/AppProvider';
 import Link from 'next/link';
-import { ArrowRight, CellPhoneIcon, LocationPinIcon } from '@/components/icons';
+import {
+  ArrowRightIcon,
+  CellPhoneIcon,
+  LocationPinIcon,
+} from '@/components/icons';
 import { menuLinks } from '@/data';
 import { lora } from '@/fonts';
+import { appShowSidebarMenu } from '@/store/actions/app';
 
 export function SidebarMenu() {
   return (
@@ -31,6 +36,9 @@ export function SidebarMenuChild() {
           top: '88px',
           transition: 'opacity 0.5s ease-in-out',
         }}
+        onClick={() => {
+          appShowSidebarMenu({ isShow: false });
+        }}
       />
       <aside
         className='fixed left-0 w-full sm:w-3/6 z-20'
@@ -42,6 +50,9 @@ export function SidebarMenuChild() {
             ? 'translateX(0)'
             : 'translateX(-100%)',
           transition: 'transform 0.5s ease-in-out',
+        }}
+        onClick={() => {
+          appShowSidebarMenu({ isShow: false });
         }}
       >
         <div className='flex flex-col h-3/5 pt-6'>
@@ -57,7 +68,7 @@ export function SidebarMenuChild() {
                 {name}
               </p>
               <div style={{ width: '25px' }}>
-                <ArrowRight />
+                <ArrowRightIcon />
               </div>
             </Link>
           ))}

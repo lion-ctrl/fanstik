@@ -1,9 +1,8 @@
-import { Slider } from '@/components/app';
+import { Product, Slider } from '@/components/app';
 import { products } from '@/data';
 import { lora } from '@/fonts';
 import { breakpoints } from '@/styles/variables';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -117,6 +116,8 @@ export default function Home() {
       <section className='mt-8'>
         <Slider
           settings={{
+            autoplay: true,
+            autoplaySpeed: 5000,
             dots: false,
             infinite: true,
             initialSlide: 0,
@@ -150,32 +151,26 @@ export default function Home() {
               {
                 breakpoint: breakpoints.sm,
                 settings: {
-                  arrows: false,
-                  slidesToShow: 2,
+                  arrows: true,
+                  slidesToShow: 1,
                 },
               },
             ],
           }}
         >
-          {products.map(({ href, src, name, price }, i) => (
-            <div className='p-4' key={`${href}-${i}`}>
-              <Link href={href}>
-                <div className='relative slider-product-img'>
-                  <Image
-                    src={src}
-                    alt='product'
-                    className='object-cover'
-                    fill
-                  />
-                </div>
-                <h3 className={lora.className}>{name}</h3>
-                <p className={lora.className}>{price}</p>
-                <button className='py-1 rounded-md w-full sm:w-auto'>
-                  See more
-                </button>
-              </Link>
-            </div>
-          ))}
+          {products
+            .filter(({ type }) => type === 'necklace')
+            .map(({ href, src, name, price }, i) => (
+              <div className='p-4' key={`${href}-${i}`}>
+                <Product
+                  href={href}
+                  src={src}
+                  name={name}
+                  price={price}
+                  includeButton
+                />
+              </div>
+            ))}
         </Slider>
       </section>
     </main>

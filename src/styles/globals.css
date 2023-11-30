@@ -185,13 +185,31 @@ svg {
   }
 }
 
-/* ------ Hero image ------ */
-.slider-product-img {
+/* ------ Product ------ */
+.product_img {
   height: 184px;
 }
 
-@media (min-width: 36rem) {
-  .slider-product-img {
+.product_title {
+  border-bottom: 1px solid transparent;
+  width: max-content;
+}
+
+.product:hover .product_title {
+  border-bottom: 1px solid var(--color1);
+}
+
+.product_button {
+  background-color: var(--color1);
+  color: var(--white);
+}
+
+.product:hover .product_button {
+  opacity: 0.8;
+}
+
+@media (min-width: 330px) {
+  .product_img {
     height: 417px;
   }
 }
