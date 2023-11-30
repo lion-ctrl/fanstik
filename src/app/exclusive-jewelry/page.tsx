@@ -10,7 +10,9 @@ export default function ExclusiveJewelryPage() {
       <section className='container mb-4'>
         <BreadCrumb breadcrumbs={[{ label: 'Home', href: '/' }]} />
       </section>
-      <h1 className={`text-center text-4xl ${lora.className}`}>Shop All</h1>
+      <h1 className={`text-center text-4xl mb-2 ${lora.className}`}>
+        Shop All
+      </h1>
       <section className='container mb-10'>
         <Slider
           settings={{

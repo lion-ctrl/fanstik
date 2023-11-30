@@ -9,7 +9,9 @@ export default function EngravableJewelryPage() {
       <section className='container mb-4'>
         <BreadCrumb breadcrumbs={[{ label: 'Home', href: '/' }]} />
       </section>
-      <h1 className={`text-center text-4xl ${lora.className}`}>Engravable</h1>
+      <h1 className={`text-center text-4xl mb-4 ${lora.className}`}>
+        Engravable
+      </h1>
       <Products
         products={products.filter(
           ({ engravable, type }) => engravable && type !== 'pet'
