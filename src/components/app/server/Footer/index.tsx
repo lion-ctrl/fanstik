@@ -22,10 +22,7 @@ export function Footer() {
         ))}
       </div>
       <h4 className={`text-base ${lora.className}`}>Contact Us</h4>
-      <a
-        href='tlf:1-407-564-0222'
-        className='block mt-4 text-sm hover:underline'
-      >
+      <a href='tlf:+14075640222' className='block mt-4 text-sm hover:underline'>
         +1 407 564 0222
       </a>
       <a
